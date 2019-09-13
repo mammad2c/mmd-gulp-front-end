@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fa" dir="ltr">
+  <head>
+    {% include "_meta.html" %}
+    <title>{{ title }}</title>
+    {% include "_css.html" %}
+  </head>
+
+  <body>
+    <!-- your per page codes -->
+    {% block body %}{% endblock %}
+    <!-- end your page codes -->
+
+    <!-- footer and js files -->
+    {% include "_footer.html" %}
+
+    <!-- modal or something else down here -->
+    {% include "_endContent.html" %}
+
+    <!-- javascript files -->
+    {% include "_js.html" %}
+
+    <!-- inline js per page come down here -->
+    {% block js %} {% endblock %}
+  </body>
+</html>
